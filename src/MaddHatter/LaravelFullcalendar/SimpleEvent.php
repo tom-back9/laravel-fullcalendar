@@ -36,6 +36,16 @@ class SimpleEvent implements IdentifiableEvent
      * @var DateTime
      */
     public $end;
+    
+     /**
+     * @var string
+     */
+    public $color;
+
+    /**
+     * @var string
+     */
+    public $url;
 
     /**
      * @param string          $title
@@ -51,6 +61,8 @@ class SimpleEvent implements IdentifiableEvent
         $this->start    = $start instanceof DateTime ? $start : new DateTime($start);
         $this->end      = $start instanceof DateTime ? $end : new DateTime($end);
         $this->id       = $id;
+        $this->color    = $color;
+        $this->url      = $url;
     }
 
     /**
@@ -101,5 +113,25 @@ class SimpleEvent implements IdentifiableEvent
     public function getEnd()
     {
         return $this->end;
+    }
+    
+    /**
+     * Get the color
+     *
+     * @return DateTime
+     */
+    public function getColor()
+    {
+        return $this->color;
+    }
+
+    /**
+     * Get the end time
+     *
+     * @return DateTime
+     */
+    public function getUrl()
+    {
+        return $this->url;
     }
 }

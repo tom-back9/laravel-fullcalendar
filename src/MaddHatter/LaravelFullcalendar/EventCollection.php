@@ -38,6 +38,8 @@ class EventCollection
             'allDay' => $event->isAllDay(),
             'start' => $event->getStart()->format('c'),
             'end' => $event->getEnd()->format('c'),
+            'color' => $event->getColor(),
+            'url' => $event->getUrl()
         ], $customAttributes);
     }
 

@@ -31,5 +31,18 @@ interface Event
      * @return DateTime
      */
     public function getEnd();
-
+    
+    /**
+     * Get the color of the event
+     *
+     * @return String
+     */
+     
+    public function getColor();
+    /**
+     * Get the url of the event
+     *
+     * @return String
+     */
+    public function getUrl();
 }
