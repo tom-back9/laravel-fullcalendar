@@ -54,7 +54,7 @@ class SimpleEvent implements IdentifiableEvent
      * @param string|DateTime $end   If string, must be valid datetime format: http://bit.ly/1z7QWbg
      * @param int|string|null $id
      */
-    public function __construct($title, $isAllDay, $start, $end, $id = null)
+    public function __construct($title, $isAllDay, $start, $end, $id = null, $color = null, $url = null)
     {
         $this->title    = $title;
         $this->isAllDay = $isAllDay;
